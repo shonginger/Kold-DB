@@ -9,16 +9,16 @@ class Task: ICallable<T>
 public:
         Task();
         ~Task();
-        T* operator()();
+        T& operator()();
 
 private:
-        T* (*_function)(void*);
+        T& (*_function)(void*);
         void* _args;
         pthread_t _threadId;
 };
 
 template<typename T>
-T* Task<T>::operator()()
+T& Task<T>::operator()()
 {
         return _function(_args);
 }

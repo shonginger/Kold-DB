@@ -3,7 +3,7 @@
 
 #include "comparable.hpp"
 
-template <typename T)>
+template <typename T>
 class IKeyValueCollection
 {
 public:
