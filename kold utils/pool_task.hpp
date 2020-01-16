@@ -14,7 +14,6 @@ public:
 private:
         T& (*_function)(void*);
         void* _args;
-        pthread_t _threadId;
 };
 
 template<typename T>
