@@ -6,10 +6,11 @@
 #include "format.hpp"
 #include "key_value.hpp"
 
-class Table: IKeyValueCollection<IndexItem>
+class Table
 {
 private:
         std::fstream& _file;
+        IKeyValueCollection<IndexItem>& _index;
 
 public:
         Table();
