@@ -10,7 +10,7 @@
 
 // entry
 
-struct Entry
+struct FileEntry
 {
         std::string _key;
         std::string _value;
