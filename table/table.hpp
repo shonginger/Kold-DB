@@ -10,9 +10,9 @@
 class Table
 {
 private:
-        std::fstream& _file;        
+        std::fstream& _file;                      // shon: does table know about files? shouldn't this part go into the formatter?        
         
-        std::map<std::string&, IndexItem> _index;
+        std::map<std::string&, IndexItem> _index; // shon: aren't keys supposed to be timestamps? so the size of them will be fixed?
 
 public:
         Table();
